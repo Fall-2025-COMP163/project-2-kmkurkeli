@@ -162,6 +162,14 @@ class Mage(Player):
         target.take_damage(damage)
         print(f"{self.name} casts a spell on {target.name} for {damage} damage!")
 
+    def fireball(self, target):
+        """
+        Special mage ability  a powerful magical attack.
+        Should do significantly more damage than regular attack.
+        """
+        damage = self.magic + 10
+        target.take_damage(damage)
+        print(f"{self.name} casts Fireball on {target.name} for {damage} damage!")
 
 def fireball(self, target):
         """
